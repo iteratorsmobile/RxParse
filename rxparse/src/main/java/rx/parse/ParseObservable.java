@@ -249,6 +249,10 @@ public class ParseObservable {
         return TaskObservable.deferNullable(() -> ParseUser.logInInBackground(username, password));
     }
 
+    public static Observable<ParseUser> logInWith(String authType, Map<String, String> authData) {
+        return TaskObservable.deferNullable(() -> ParseUser.logInWithInBackground(authType, authData));
+    }
+
     public static Observable<Void> logOut() {
         return TaskObservable.deferNullable(() -> ParseUser.logOutInBackground());
     }
