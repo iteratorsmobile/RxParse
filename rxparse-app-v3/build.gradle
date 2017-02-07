@@ -7,7 +7,6 @@ buildscript {
     dependencies {
         classpath 'me.tatarka:gradle-retrolambda:3.4.0'
         classpath 'com.android.tools.build:gradle:2.2.3'
-        classpath 'com.github.JakeWharton:sdk-manager-plugin:-SNAPSHOT'
         classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2'
     }
 
@@ -67,15 +66,11 @@ dependencies {
     compile 'com.parse.bolts:bolts-tasks:1.4.0'
     compile project(':rxparse')
     compile project(':rxparse-facebook-v3')
-    //compile 'com.github.yongjhih.RxParse:rxparse:-SNAPSHOT'
-    //compile 'com.github.yongjhih.RxParse:rxparse-facebook-v3:-SNAPSHOT'
 
     compile 'io.reactivex:rxjava:1.2.4'
     compile 'io.reactivex:rxandroid:0.24.0'
 
-    //testCompile "org.mockito:mockito-core:1.+"
 
     compile 'com.jakewharton:butterknife:6.1.0'
-    //compile 'com.jakewharton.timber:timber:2.5.1'
     compile 'com.facebook.fresco:fresco:0.4.0'
 }
